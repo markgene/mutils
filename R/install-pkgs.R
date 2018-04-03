@@ -4,6 +4,11 @@
 #'
 #' @return NULL
 install_pkgs <- function() {
+  install_pkgs_cran()
+  install_pkgs_github()
+}
+
+
 #' Install personal selected packages on CRAN
 #'
 #' @return NULL
