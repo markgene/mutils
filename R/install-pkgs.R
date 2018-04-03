@@ -3,6 +3,7 @@
 #' Install personal selected packages
 #'
 #' @return NULL
+#' @export
 install_pkgs <- function() {
   install_pkgs_cran()
   install_pkgs_github()

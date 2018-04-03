@@ -6,6 +6,7 @@
 #' Total space consumption of installed R packages
 #'
 #' @return A character scalar
+#' @export
 installed_pkgs_total_size <- function() {
   result <- installed.packages() %>%
     tibble::as_data_frame() %>%
@@ -30,6 +31,7 @@ installed_pkgs_total_size <- function() {
 #' pkg_dir, pkg_dir_size, which are package name, package version,
 #' package installed directory, and the space the package consumes
 #' in byte.
+#' @export
 installed_pkgs_sizes <- function() {
   result <- installed.packages() %>%
     tibble::as_data_frame() %>%
@@ -48,6 +50,7 @@ installed_pkgs_sizes <- function() {
 #' Tree map of space consumption of installed R packages
 #'
 #' @return A \code{ggplot} object
+#' @export
 installed_pkgs_space_treemap <- function() {
   installed.packages() %>%
     tibble::as_data_frame() %>%
