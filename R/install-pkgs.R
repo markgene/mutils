@@ -35,7 +35,7 @@ install_pkgs_cran <- function() {
     install.packages(uninstalled, repo = "https://cloud.r-project.org")
     message("Success!")
   } else {
-    message("All CRAN packages installed!")
+    message("All CRAN packages have been installed!")
   }
 }
 
@@ -51,6 +51,6 @@ install_pkgs_github <- function() {
     devtools::install_github(uninstalled)
     message("Success!")
   } else {
-    message("All GitHub packages installed!")
+    message("All GitHub packages have been installed!")
   }
 }
