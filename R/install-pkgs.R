@@ -32,7 +32,7 @@ install_pkgs_cran <- function() {
     )
   uninstalled <- cran_pkgs[!(cran_pkgs %in% installed.packages())]
   if (length(uninstalled)) {
-    install.packages(uninstalled)
+    install.packages(uninstalled, repo = "https://cloud.r-project.org")
     message("Success!")
   } else {
     message("All CRAN packages installed!")
