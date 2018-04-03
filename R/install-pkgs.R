@@ -24,6 +24,7 @@ install_pkgs_cran <- function() {
       "hrbrthemes",
       "igraph",
       "maps",
+      "purrr",
       "roxygen2",
       "rvest",
       "stringr",
@@ -45,7 +46,8 @@ install_pkgs_cran <- function() {
 #' @return NULL
 install_pkgs_github <- function() {
   gb_pkgs <-
-    c()
+    c("thomasp85/ggraph",
+      "hrbrmstr/hrbrthemes")
   uninstalled <- gb_pkgs[!(gb_pkgs %in% installed.packages())]
   if (length(uninstalled)) {
     devtools::install_github(uninstalled)
