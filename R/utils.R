@@ -31,3 +31,19 @@ load_object <- function(rda, name) {
   else
     stop("Object ", name, " does not exist.")
 }
+
+
+#' Split a file path into a vector of folder names
+#'
+#' @details
+#' The function is adopted from \href{https://stackoverflow.com/questions/29214932/split-a-file-path-into-folder-names-vector}{a discussion on StackOverflow}.
+#'
+#' @param x A character scalar of file path.
+#' @return A character vector.
+#' @export
+split_path <- function(x) {
+  if (dirname(x)==x)
+    x
+  else
+    c(basename(x),split_path(dirname(x)))
+}
