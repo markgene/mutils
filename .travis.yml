@@ -1,10 +1,6 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-<<<<<<< HEAD
 language: R
-=======
-language: r
->>>>>>> 93fb558a768d830eaffff0ebb414f40da4b5ed51
 sudo: false
 cache: packages
 
