@@ -9,4 +9,5 @@
 #' @rdname pipe
 #' @export
 #' @param lhs,rhs specify what lhs and rhs are
+#' @noRd
 NULL
