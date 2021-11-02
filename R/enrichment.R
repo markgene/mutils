@@ -105,6 +105,8 @@ OR_msigdb.mouse1 <- function(gene,
     openxlsx::addWorksheet(wb, tab_name)
     openxlsx::writeData(wb, sheet = tab_name, or.resLst[[gs_cat]]$df)
   }
+  openxlsx::addWorksheet(wb, "Gene")
+  openxlsx::writeData(wb, sheet = "Gene", gene)
   openxlsx::saveWorkbook(
     wb,
     file = excel_file,
