@@ -9,6 +9,6 @@ Description: Mark Chen's utility functions.
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.2
 Suggests: testthat, org.Hs.eg.db, ReactomePA, biomaRt
 Imports: magrittr, dplyr, tibble, purrr, igraph, ggraph, ggplot2, clusterProfiler, openxlsx, msigdbr
